@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="container">
+            <input type="text" class="calculator-screen" id="calculator-in" />
+<div class="logic_container">
+    <button type="button" onclick="del()" class="number" id="">del</button>
+    <button type="button" onclick="ce()" class="number" id="">CE</button>
+    <button type="button" onclick="ansM()" class="number" id="n">ANS</button>
+</div>
+            <div class="calculator">
+                <div class="numbers_container">
+                    <div>
+                        <button type="button" onclick="buttonClicked(this)" class="number" id="number-1">1</button>
+                        <button type="button" onclick="buttonClicked(this)" class="number" id="number-2">2</button>
+                        <button type="button" onclick="buttonClicked(this)" class="number" id="number-3">3</button>
+                    </div>
+                    <div>
+                        <button type="button" onclick="buttonClicked(this)" class="number" id="number-4">4</button>
+                        <button type="button" onclick="buttonClicked(this)" class="number" id="number-5">5</button>
+                        <button type="button" onclick="buttonClicked(this)" class="number" id="number-6">6</button>
+                    </div>
+                    <div>
+                        <button type="button" onclick="buttonClicked(this)" class="number" id="number-7">7</button>
+                        <button type="button" onclick="buttonClicked(this)" class="number" id="number-8">8</button>
+                        <button type="button" onclick="buttonClicked(this)" class="number" id="number-9">9</button>
+                    </div>
+                    <div>
+                        <button type="button" onclick="spetialOperatorClicked('.')" class="number" id="number-dot">.</button>
+                        <button type="button" onclick="buttonClicked(this)" class="number" id="number-0">0</button>
+                        <button type="button" onclick="equal('=')" class="equal number" id="number-equal">=</button>
+                    </div>
+                </div>
+                <div class="operations_container">
+                    <button type="button" onclick="operatorClicked('+')" class="operator add" id="operator-plus">+</button>
+                    <button type="button" onclick="operatorClicked('-')" class="operator" id="number-minus">-</button>
+                    <button type="button" onclick="operatorClicked('x')" class="operator" id="number-multiply">x</button>
+                    <button type="button" onclick="operatorClicked('/')" class="operator" id="number-divide">/</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+
+</body>
+
+</html>

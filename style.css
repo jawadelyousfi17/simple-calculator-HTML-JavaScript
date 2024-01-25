@@ -1,0 +1,54 @@
+.parent {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    width: max-content;
+    flex-direction: column;
+    justify-content: center;
+}
+.calculator {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: max-content;
+    background-color: rgb(220, 129, 26);
+}
+.calculator-screen{
+    width: auto;
+    margin-bottom: 0.1em ;
+    height: 40px;
+}
+.numbers_container {
+    display: flex;
+    flex-direction: column;
+}
+.numbers_container div {
+    display: flex;
+    flex-direction: row;
+}
+.operations_container {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+}
+button{
+    width: 45px;
+    height: 45px;
+    margin: 0.2em;
+}
+.operator {
+    height: 20%;
+}
+.add {
+    height : 30%;
+}
+.logic_container {
+    display: flex;
+    flex-direction: row;
+}
+.logic_container button {
+    width : calc(100% / 3) ;
+}
